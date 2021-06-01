@@ -1,0 +1,54 @@
+@import "./variables";
+@import "./mixin";
+
+.section3 {
+	@include repeatContainer;
+	&__info {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 50px 80px;
+
+		&__adchivement {
+			.p2 {
+				max-width: 300px;
+				position: relative;
+				font-weight: bold;
+				color: $secondary-text-color;
+				font-size: 1.8rem;
+			}
+			.p2::after {
+				content: attr(data-text);
+				position: absolute;
+				bottom: -25px;
+				right: 0;
+				/* Change the position of transformed element */
+				transform-origin: bottom;
+				/*  Rotates around x-axis */
+				transform: rotateX(180deg);
+				transform: rotateZ(180deg);
+				/* linear-gradient defined by up,down,left ,right ,diagonal */
+				background-image: linear-gradient(
+					0deg,
+					$secondary-text-color 0,
+					$secondary-text-color 100
+				);
+				-webkit-background-clip: text;
+				color: transparent;
+				opacity: 0.3;
+			}
+		}
+	}
+
+	&__info-img {
+		height: 100%;
+		box-sizing: border-box;
+
+		&__employees {
+			column-count: 5;
+			column-gap: 10px;
+			row-gap: 10px;
+		}
+	}
+}

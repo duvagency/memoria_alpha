@@ -1,0 +1,18 @@
+@import "./_normalize";
+
+/* Global Styles */
+
+@import "./global";
+
+/* Variables */
+
+@import "./variables";
+
+/*------------------------ Styles ------------------------*/
+
+@import "./section1";
+@import "./section2";
+@import "./section3";
+
+/* ---------------------Media Queries-------------------- */
+@import "./mediaQuery";

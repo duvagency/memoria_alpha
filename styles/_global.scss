@@ -1,0 +1,23 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Mulish", sans-serif;
+}
+
+.main-container {
+	height: inherit;
+	width: 100vw;
+	display: flex;
+	/* overflow: hidden; */
+}
+
+.container {
+	padding: 50px;
+	min-width: 100vw;
+}
+
+.section {
+	position: relative;
+	min-width: 100vw;
+	min-height: 100vh;
+}

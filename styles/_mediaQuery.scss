@@ -1,0 +1,119 @@
+//Pantallas muy pequeñas (móviles en portrait de menos de 576px)
+@media (max-width: 575.98px) {
+	.section1 {
+		&__brand {
+			img {
+				width: 35vw;
+				max-width: 200px;
+			}
+		}
+
+		&__info {
+			&__text-memoria {
+				margin-bottom: 30px;
+				h1 {
+					font-size: 10vw;
+					span {
+						font-size: 15vw;
+					}
+				}
+				button {
+					display: none;
+				}
+			}
+
+			&__text-note {
+				h3 {
+					font-size: 10vw;
+					margin-top: -150px;
+				}
+			}
+		}
+
+		&__btn-download {
+			left: 20px;
+			bottom: 30px;
+			font-size: 3vw;
+			padding: 10px;
+		}
+	}
+}
+
+//Pantallas pequeñas (móviles en landscape de menos de 768px)
+@media (max-width: 767.98px) {
+	.main-container {
+		flex-direction: column;
+		overflow: visible;
+	}
+
+	.container {
+		padding: 20px;
+	}
+}
+
+//Pantallas medianas (tablets de menos de 992px)
+@media (max-width: 991.98px) {
+	.section2 {
+		.container {
+			grid-template-columns: 1fr;
+		}
+
+		&__info {
+			padding: 30px;
+		}
+
+		&__info-img {
+			height: 500px;
+			position: relative;
+			.box-p {
+				.p1,
+				.p2 {
+					display: none;
+				}
+			}
+			.box-p1 {
+				transform: translateY(80px) rotate(-10deg);
+			}
+
+			.box-p2 {
+				transform: translateY(-50px) rotate(-10deg);
+			}
+		}
+	}
+}
+
+//Pantallas grandes (desktops de menos de 1200px)
+@media (max-width: 1199.98px) {
+}
+
+/*--------------------------------*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+	/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+	/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	/* Styles */
+}

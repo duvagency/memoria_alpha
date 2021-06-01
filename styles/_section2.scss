@@ -1,0 +1,68 @@
+@import "./variables";
+@import "./mixin";
+
+.section2 {
+	/* display: none; */
+	@include repeatContainer;
+
+	&__info {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		height: 100%;
+		background-color: $primary-color;
+		padding: 50px 80px;
+
+		&__adchivement {
+			.p1 {
+				font-size: 1.1rem;
+				color: $primary-text-color;
+			}
+			.p2 {
+				font-weight: bold;
+				color: $secondary-text-color;
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	&__info-img {
+		height: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: {
+			image: url("../assets/img/section_2.png");
+			position: 80% 50%;
+			size: cover;
+			repeat: no-repeat;
+		}
+
+		.box-p {
+			font-family: $GutherFont;
+			height: max-content;
+			font-size: 1.5rem;
+			max-width: 300px;
+			text-align: center;
+			transform: rotate(-10deg);
+			p {
+				margin-bottom: 0;
+			}
+			span {
+				font-family: "Mulish", sans-serif;
+				font-size: 1rem;
+			}
+		}
+
+		.box-p1 {
+			align-self: flex-end;
+			color: $secondary-text-color;
+		}
+		.box-p2 {
+			color: $textColor;
+		}
+	}
+}
