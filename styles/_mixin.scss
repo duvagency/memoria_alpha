@@ -6,3 +6,16 @@
 		padding: 0;
 	}
 }
+
+@mixin addBg-img($url) {
+	background: {
+		image: $url;
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+	}
+}
+
+@mixin boxShadow-text($color) {
+	text-shadow: 2px 2px #ff0000;
+}

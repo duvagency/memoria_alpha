@@ -7,8 +7,9 @@ body {
 .main-container {
 	height: inherit;
 	width: 100vw;
+	max-height: 100vh;
 	display: flex;
-	/* overflow: hidden; */
+	overflow-y: hidden;
 }
 
 .container {
