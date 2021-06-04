@@ -4,7 +4,6 @@
 .section2 {
 	/* display: none; */
 	@include repeatContainer;
-	display: none;
 	&__info {
 		box-sizing: border-box;
 		display: flex;

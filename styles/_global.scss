@@ -1,3 +1,8 @@
+html {
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
 body {
 	width: 100vw;
 	height: 100vh;
@@ -5,11 +10,23 @@ body {
 }
 
 .main-container {
+	position: relative;
 	height: inherit;
 	width: 100vw;
 	max-height: 100vh;
 	display: flex;
-	overflow-y: hidden;
+	transition: all 0.5s;
+
+	/* overflow-x: scroll; */
+	/* -ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+	scrollbar-width: none;
+	scroll-behavior: smooth; */
+
+	/* 	&::-webkit-scrollbar {
+		display: none;
+	} */
+	overflow: hidden;
 }
 
 .container {

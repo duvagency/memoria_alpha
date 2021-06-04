@@ -19,12 +19,8 @@
 				color: $secondary-text-color;
 				font-size: 1.5rem;
 			}
-			.p2::after {
-				content: attr(data-text);
-				position: absolute;
-				bottom: -25px;
-				right: 0;
-				transform-origin: bottom;
+
+			.p2.reflection {
 				transform: rotateX(180deg);
 				transform: rotateZ(180deg);
 				color: $secondary-text-color;
@@ -37,7 +33,7 @@
 		/* width: 200vw;
 		max-width: 3840px; */
 		&__employees {
-			height: 100vh;
+			min-height: 100vh;
 			display: grid;
 			grid-template-columns: 350px repeat(3, 450px) 350px;
 			grid-template-rows: 50px repeat(3, 1fr) 50px;
@@ -164,6 +160,16 @@
 				&.level-3 {
 					grid-row: span 3;
 				}
+
+				/* .opacity-bg {
+					height: 100%;
+					width: 100%;
+					background-color: $thrird-color-alpha;
+					.box_img-employe__box-p {
+						color: $textColor;
+						transform: initial;
+					}
+				} */
 			}
 		}
 	}

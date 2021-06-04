@@ -2,7 +2,7 @@
 @import "./variables";
 
 .section1 {
-	display: none;
+	/* display: none; */
 	background-color: #ddd;
 	background: {
 		color: $primary-color;
@@ -43,8 +43,8 @@
 					font-size: 6rem;
 				}
 			}
-			button {
-				appearance: none;
+			a {
+				text-decoration: none;
 				background-color: transparent;
 				display: inline-block;
 				border: none;
