@@ -3,8 +3,10 @@
 
 .section2 {
 	/* display: none; */
+	min-width: 100vw;
+
 	@include repeatContainer;
-	&__info {
+	&__left-box {
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
@@ -13,7 +15,7 @@
 		background-color: $primary-color;
 		padding: 50px 80px;
 
-		&__adchivement {
+		&__content {
 			.p1 {
 				font-size: 1.1rem;
 				color: $primary-text-color;
@@ -26,7 +28,7 @@
 		}
 	}
 
-	&__info-img {
+	&__right-box {
 		height: 100%;
 		padding: 20px;
 		box-sizing: border-box;

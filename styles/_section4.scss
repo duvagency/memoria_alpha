@@ -1,0 +1,7 @@
+@import "./variables";
+@import "./mixin";
+
+.section4 {
+	@include repeatContainer;
+	min-width: 100vw;
+}

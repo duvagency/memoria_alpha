@@ -4,16 +4,16 @@
 .section3 {
 	@include repeatContainer;
 
-	&__info {
+	&__left-box {
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 		padding: 50px 80px;
 
-		&__adchivement {
+		&__content {
 			.p2 {
-				max-width: 300px;
+				max-width: 320px;
 				position: relative;
 				font-weight: bold;
 				color: $secondary-text-color;
@@ -29,10 +29,21 @@
 		}
 	}
 
-	&__info-img {
+	&__right-box {
+		position: relative;
 		/* width: 200vw;
 		max-width: 3840px; */
-		&__employees {
+		&::after {
+			position: absolute;
+			content: "";
+			top: 0;
+			right: 0;
+			width: 90%;
+			height: 100%;
+			background-color: $primary-color;
+			z-index: -1;
+		}
+		&__content {
 			min-height: 100vh;
 			display: grid;
 			grid-template-columns: 350px repeat(3, 450px) 350px;
@@ -61,7 +72,7 @@
 
 					.sign {
 						text-align: end;
-						margin-top: 20px;
+						margin-top: 10px;
 						span {
 							display: block;
 							font-family: "Mulish", sans-serif;
@@ -150,27 +161,17 @@
 						max-width: 200px;
 					}
 				}
-
-				&.level-1 {
-					grid-row: span 1;
-				}
-				&.level-2 {
-					grid-row: span 2;
-				}
-				&.level-3 {
-					grid-row: span 3;
-				}
-
-				/* .opacity-bg {
-					height: 100%;
-					width: 100%;
-					background-color: $thrird-color-alpha;
-					.box_img-employe__box-p {
-						color: $textColor;
-						transform: initial;
-					}
-				} */
 			}
 		}
+	}
+
+	.level-1 {
+		grid-row: span 1;
+	}
+	.level-2 {
+		grid-row: span 2;
+	}
+	.level-3 {
+		grid-row: span 3;
 	}
 }
