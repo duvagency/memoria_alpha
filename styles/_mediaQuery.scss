@@ -126,8 +126,41 @@
 			grid-row: span 2;
 		}
 	}
-}
 
+	.section4 {
+		.container {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr;
+			grid-template-areas:
+				"info"
+				"images";
+		}
+		&__left-box {
+			grid-area: images;
+			justify-content: center;
+			background-color: transparent;
+
+			.box-img-oportunities {
+				position: initial;
+				margin: 0;
+				height: 700px;
+			}
+		}
+
+		&__right-box {
+			grid-area: info;
+
+			&__content {
+				align-items: center;
+				.info {
+					max-width: 600px;
+					margin: 0;
+					padding: 50px 0;
+				}
+			}
+		}
+	}
+}
 //Pantallas grandes (desktops de menos de 1200px)
 @media (max-width: 1199.98px) {
 }

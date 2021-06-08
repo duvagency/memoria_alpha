@@ -2,6 +2,7 @@
 @import "./mixin";
 
 .section3 {
+	display: none;
 	@include repeatContainer;
 
 	&__left-box {
