@@ -4,6 +4,7 @@
 .section3 {
 	display: none;
 	@include repeatContainer;
+	min-width: 200vw;
 
 	&__left-box {
 		box-sizing: border-box;

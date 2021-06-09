@@ -4,6 +4,7 @@
 		display: grid;
 		grid-template-columns: minmax(400px, 35%) auto;
 		padding: 0;
+		box-sizing: border-box;
 	}
 }
 
