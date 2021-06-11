@@ -4,10 +4,9 @@
 .section9 {
 	@include repeatContainer;
 	min-width: 100vw;
-	overflow: hidden;
 
 	.container {
-		grid-template-columns: minmax(300px, 30%) auto;
+		grid-template-columns: minmax(340px, 30%) auto;
 	}
 
 	&__left-box {
@@ -106,11 +105,27 @@
 		}
 
 		&__img-info {
+			display: flex;
+			flex-wrap: wrap;
+			height: 100%;
+			/* background-color: #000; */
 			.box-img {
-				width: 600px;
+				position: relative;
+				max-width: 550px;
+				min-width: 320px;
+				width: 100%;
 				img {
+					position: absolute;
+					bottom: 0;
+					left: 0;
 					width: 100%;
 				}
+			}
+			.info {
+				color: $primary-text-color;
+				margin-left: 50px;
+				align-self: center;
+				width: 200px;
 			}
 		}
 	}

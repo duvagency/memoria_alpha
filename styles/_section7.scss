@@ -2,6 +2,7 @@
 @import "./mixin";
 
 .section7 {
+	/* display: none; */
 	@include repeatContainer;
 	min-width: 100vw;
 
