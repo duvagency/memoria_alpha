@@ -30,552 +30,575 @@
 		<title>Memoria Alpha</title>
 	</head>
 	<body>
+		<script src="./js/anime.min.js"></script>
 		<div class="box-btns" id="box-btns">
 			<button class="btn btn-preview" id="preview"><i class="fas fa-chevron-left"></i></button>
 			<button class="btn btn-next" id="next"><i class="fas fa-chevron-right"></i></button>
 		</div>
 		<main class="main-container" id="main-container">
-			<section class="section section1">
-				<div class="container">
-					<div class="section1__brand">
-						<img src="./assets/img/logo.png" alt="brand" />
-					</div>
-					<div class="section1__info">
-						<div class="section1__info__text-memoria">
-							<h1>
-								Memoria <br />
-								<span>2020</span>
-							</h1>
-							<a href="#section2">
-								Ver Highlights <i class="fas fa-chevron-right"></i>
-							</a>
+			<div class="carrusel" id="carrusel">
+				<section class="section section1">
+					<div class="container">
+						<div class="section1__brand scale-rotate">
+							<img src="./assets/img/logo.png" alt="brand" />
 						</div>
-						<div class="section1__info__text-note">
-							<h3>
-								Invertir <br />
-								es para los <br />
-								optimistas
-							</h3>
+						<div class="section1__info">
+							<div class="section1__info__text-memoria">
+								<h1 class="a-left">
+									Memoria <br />
+									<span>2020</span>
+								</h1>
+								<button id="next" class="a-left">
+									Ver Highlights <i class="fas fa-chevron-right btn-next-home" id="next"></i>
+								</button>
+							</div>
+							<div class="section1__info__text-note a-right">
+								<h3>
+									Invertir <br />
+									es para los <br />
+									optimistas
+								</h3>
+							</div>
 						</div>
+						<button class="section1__btn-download a-bottom" >
+							Descargar Memoria <i class="fas fa-file-download"></i>
+						</button>
 					</div>
-					<button class="section1__btn-download">
-						Descargar Memoria <i class="fas fa-file-download"></i>
-					</button>
-				</div>
-			</section>
-			<section class="section section2" id="section2">
-				<div class="container">
-					<div class="section2__left-box">
-						<div class="section2__left-box__content">
-							<p class="p1">
-								Detrás de los logros del 2020, existe un gran equipo dispuesto a
-								dar la milla extra, que con cercanía y complicidad, pudo
-								adaptarse al cambio con resultados extraordinarios.
-							</p>
-							<hr />
+				</section>
+	
+				<section class="section section2" id="section2">
+					<div class="container">
+						<div class="section2__left-box">
+							<div class="section2__left-box__content">
+								<p class="p1 a-left">
+									Detrás de los logros del 2020, existe un gran equipo dispuesto a
+									dar la milla extra, que con cercanía y complicidad, pudo
+									adaptarse al cambio con resultados extraordinarios.
+								</p>
+								<hr />
+								<p class="p2 a-right">
+									Nuestra gente evidenció que la motivación de transformar
+									positivamente el bienestar financiero de las personas, de las
+									empresas y nuestro país es lo que nos mueve.
+								</p>
+							</div>
+						</div>
+						<div class="section2__right-box">
+							<div class="box-p1 box-p scale-rotate">
+								<p class="p1">
+									Creemos firmemente en la democratizacion del mercado de valores;
+									trabajamos en buscar soluciones innovadoras para que el mercado
+									dominicano se desarrolle
+								</p>
+								<p class="sign">
+									- Santiago Camarena
+								</p>
+									<span>Vicepresidente Ejecutivo</span>
+						</div>
+						<div class="box-p2 box-p scale-rotate">
 							<p class="p2">
-								Nuestra gente evidenció que la motivación de transformar
-								positivamente el bienestar financiero de las personas, de las
-								empresas y nuestro país es lo que nos mueve.
-							</p>
-						</div>
-					</div>
-					<div class="section2__right-box">
-						<div class="box-p1 box-p">
-							<p class="p1">
-								Creemos firmemente en la democratizacion del mercado de valores;
-								trabajamos en buscar soluciones innovadoras para que el mercado
-								dominicano se desarrolle
+								Los retos no desaparecen y en Alpha siempre seguiremos comprometidos con la excelencia, las relaciones a largo plazo y un futuro mejor para nuestro país.
 							</p>
 							<p class="sign">
-								- Santiago Camarena
+								- Juan Manuel Barranco
 							</p>
-								<span>Vicepresidente Ejecutivo</span>
+							<span>Vicepresidente de Finanzas</span>
 					</div>
-					<div class="box-p2 box-p">
-						<p class="p2">
-							Los retos no desaparecen y en Alpha siempre seguiremos comprometidos con la excelencia, las relaciones a largo plazo y un futuro mejor para nuestro país.
-						</p>
-						<p class="sign">
-							- Juan Manuel Barranco
-						</p>
-						<span>Vicepresidente de Finanzas</span>
-				</div>
-				</div>
-			</section>
-
-			<section class="section section3">
-				<div class="container">
-					<div class="section3__left-box">
-						<div class="section3__left-box__content">
-							<p class="p2" data-text="Nuestros colaboradores nos cuentan cómo el año pasado nos enseñó a ver la vida desde otra perspectiva.">
-								Nuestros colaboradores nos cuentan cómo el año pasado nos enseñó a ver la vida desde otra perspectiva.
-							</p>
-							<p class="p2 reflection" data-text="Nuestros colaboradores nos cuentan cómo el año pasado nos enseñó a ver la vida desde otra perspectiva.">
-								Nuestros colaboradores nos cuentan cómo el año pasado nos enseñó a ver la vida desde otra perspectiva.
-							</p>
+					</div>
+				</section>
+	
+				<section class="section section3">
+					<div class="container">
+						<div class="section3__left-box">
+							<div class="section3__left-box__content a-bottom">
+								<p class="p2" >
+									Nuestros colaboradores nos cuentan cómo el año pasado nos enseñó a ver la vida desde otra perspectiva.
+								</p>
+								<p class="p2 reflection" >
+									Nuestros colaboradores nos cuentan cómo el año pasado nos enseñó a ver la vida desde otra perspectiva.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="section3__right-box">
-						<div class="section3__right-box__content">
-							<div class="box_img-employe level-3" style="--bg-img: url('../assets/img/section_3_perfil_1.png')">
-								<div class="opacity-bg">
+						<div class="section3__right-box">
+							<div class="section3__right-box__content">
+								<div class="box_img-employe level-3 a-top" style="--bg-img: url('../assets/img/section_3_perfil_1.png')">
+									<div class="opacity-bg">
+										<div class="box_img-employe__box-p">
+											<p class="p">
+												La distancia no es un obstaculo cuando tenemos vinculos mas fuertes  que las barreras que nos separan. 
+											</p>
+											<p class="sign">
+												- Santiago Camarena
+												<span>Vicepresidente Ejecutivo</span>
+											</p>
+									</div>
+									</div>
+							</div>
+	
+								<div class="box_img-employe level-1 a-bottom"style="--bg-img: url('../assets/img/section_3_perfil_2.png')">
+									<div class="opacity-bg">
 									<div class="box_img-employe__box-p">
 										<p class="p">
-											La distancia no es un obstaculo cuando tenemos vinculos mas fuertes  que las barreras que nos separan. 
+											Aprendi que necesito mucho menos de lo que tengo para ser feliz, ya que la felicidad esta en lo mas simple de la vida.
+										</p>
+										<p class="sign">
+											- Laura Nunez
+											<span>Gerente de Negocios</span>
+										</p>
+											
+								</div></div></div>
+								<div class="box-fill"></div>
+								<div class="box-fill"></div>
+	
+								<div class="box_img-employe level-2 a-bottom" style="--bg-img: url('../assets/img/section_3_perfil_3.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											Nos convertimos en profesores de nuestros hijos, en trabajadores remotos, en cocineros, encontramos nuevos hobbies, fortalecimos lazos que quizas estaban tambaleantes, vimos partir seres queridos, celebramos recuperaciones de personas que no conocemos. Nos unimos como nunca antes para batallar y salir adelante.
 										</p>
 										<p class="sign">
 											- Santiago Camarena
 											<span>Vicepresidente Ejecutivo</span>
 										</p>
-								</div>
-								</div>
-						</div>
-
-							<div class="box_img-employe level-1"style="--bg-img: url('../assets/img/section_3_perfil_2.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										Aprendi que necesito mucho menos de lo que tengo para ser feliz, ya que la felicidad esta en lo mas simple de la vida.
-									</p>
-									<p class="sign">
-										- Laura Nunez
-										<span>Gerente de Negocios</span>
-									</p>
-										
-							</div></div></div>
-							<div class="box-fill"></div>
-							<div class="box-fill"></div>
-
-							<div class="box_img-employe level-2"style="--bg-img: url('../assets/img/section_3_perfil_3.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										Nos convertimos en profesores de nuestros hijos, en trabajadores remotos, en cocineros, encontramos nuevos hobbies, fortalecimos lazos que quizas estaban tambaleantes, vimos partir seres queridos, celebramos recuperaciones de personas que no conocemos. Nos unimos como nunca antes para batallar y salir adelante.
-									</p>
-									<p class="sign">
-										- Santiago Camarena
-										<span>Vicepresidente Ejecutivo</span>
-									</p>
-										
-							</div></div></div>
-
-							<div class="box_img-employe level-2" style="--bg-img: url('../assets/img/section_3_perfil_4.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										El 2020 me recordo que en lo simple esta la grandeza y que con pequenas cosas hacemos maravillas.
-									</p>
-									<p class="sign">
-										- Magdelin Díaz
-										<span>Analista de Middle Office</span>
-									</p>
-										
-							</div></div></div>
-
-							<div class="box_img-employe level-2"style="--bg-img: url('../assets/img/section_3_perfil_5.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										No sabia cuanta fuerza de voluntad tenia hasta que me vi en circunstancias que me llevaron a poner en practica aquello de lo que pense que no era capaz.
-									</p>
-									<p class="sign">
-										- Elba Salcedo
-										<span>Oficial de Control Interno</span>
-									</p>
-										
-							</div></div></div>
-
-							<div class="box_img-employe level-2" style="--bg-img: url('../assets/img/section_3_perfil_6.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										El 2020 me demostro que los limites me los pongo yo misma
-									</p>
-									<p class="sign">
-										- Carol Then
-										<span>Gerente de Tecnología <br>
-											y Proyectos</span>
-									</p>
-										
-							</div></div></div>
-							<div class="box-fill"></div>
-							<div class="box-fill"></div>
-
-							<div class="box_img-employe level-2" style="--bg-img: url('../assets/img/section_3_perfil_7.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										El ano que me demostro que lo mas importante son las relaciones humanas que tenemos, nuestra salud y paz, pues al final es lo que perdura y lo que nos da verdadera felicidad. 
-									</p>
-									<p class="sign">
-										- Stephannie Cobo
-										<span>Auxiliar de Operaciones</span>
-									</p>
-										
-							</div></div></div>
-
-							<div class="box_img-employe level-2"style="--bg-img: url('../assets/img/section_3_perfil_8.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										Un beso, un abrazo y una caricia vale mas que todo el dinero del mundo.
-									</p>
-									<p class="sign">
-										- Idaissa Ferreras
-										<span>Oficial Junior Operaciones</span>
-									</p>
-										
-							</div></div></div>
-
-							<div class="box_img-employe level-2" style="--bg-img: url('../assets/img/section_3_perfil_9.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										Aunque fuiste un ano duro, durisimo, tambien fuiste como un combustible que me permitio explotar virtudes oxidadas y tambien pusiste en evidencia algunos defectos y debilidades a los que debia hacerle frente. 
-									</p>
-									<p class="sign">
-										- Elizabeth Severino
-										<span>Gerente de Contabilidad</span>
-									</p>
-										
-							</div></div></div>
-							
-							<div class="box_img-employe level-2" style="--bg-img: url('../assets/img/section_3_perfil_10.png')">
-								<div class="opacity-bg">
-								<div class="box_img-employe__box-p">
-									<p class="p">
-										Nuestros miedos e incertidumbres  nos hicieron replantearnos y darnos cuenta de que la vida esta hecha de momentos y que somos responsables de definir como queremos vivirlos.  
-									</p>
-									<p class="sign">
-										- Annalie Pichardo
-										<span>Gerente de <br>
-											Servicio al Cliente</span>
-									</p>
-										
-							</div></div></div>
-						</div>
-				</div>
-			</section>
-
-			<div class="section section4">
-				<div class="container">
-					<div class="section4__left-box">
-						<div class="box-img-oportunities">
-							<div class="box-img-oportunities__img-box level-3" style="--bg-img: url('../assets/img/section_4_perfil_1.png')">
-								<!-- <img src="./assets/img/section_4_perfil_1.png" alt=""> -->
-							</div>
-							<div class="box-img-oportunities__img-box level-2"  style="--bg-img: url('../assets/img/section_4_perfil_2.png')">
-								<!-- <img src="./assets/img/section_4_perfil_2.png" alt=""> -->
-							</div>
-							<div></div>
-							<div></div>
-							<div class="box-img-oportunities__img-box level-2" style="--bg-img: url('../assets/img/section_4_perfil_3.png')">
-								<!-- <img src="./assets/img/section_4_perfil_3.png" alt=""> -->
-							</div>
-							<div class="box-img-oportunities__img-box level-3" style="--bg-img: url('../assets/img/section_4_perfil_4.png')">
-								<!-- <img src="./assets/img/section_4_perfil_4.png" alt=""> -->
-							</div>
-						</div>
-					</div>
-					<div class="section4__right-box">
-						<div class="section4__right-box__content">
-							<div class="info">
-								<h2>Transformando las dificultades <br> en oportunidades</h2>
-							<p>En marzo de 2020, la nueva normalidad llegó y <strong>
-								tuvimos que rápidamente hacer la transición al teletrabajo
-							</strong>. Pudimos adaptarnos de forma rápida y eficaz, siendo el primer puesto de bolsa en implementar esta modalidad para todos nuestros colaboradores.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="section section5">
-				<div class="container">
-					<div class="section5__left-box">
-						<div class="section5__left-box__title">
-							<h2>
-								Desempeño
-							</h2>
-							<h3>Razones para creer</h3>
-						</div>
-						<div class="section5__left-box__cards-performance">
-							<div class="card">
-									<p class="card__title">Patrimonio</p>
-									<strong><p class="card__number">16<span>%</span></p></strong>
-									<p class="card__info">Cerramos el 2020 con un total de RD$3,052,573,104, lo que representa un  16% del total del patrimonio del sector.</p>
-							</div>
-							<div class="card">
-								<p class="card__title">Resultado Neto</p>
-								<strong><p class="card__number">18<span>%</span></p></strong>
-								<p class="card__info">Reportamos un resultado neto ascendente a RD$1,020,044,220, el cual representa el 18% del resultado total del sector.</p>
-							</div>
-							<div class="card">
-								<p class="card__title">Activos</p>
-								<strong><p class="card__number">16<span>%</span></p></strong>
-								<p class="card__info">Nuestros activos totales alcanzaron RD$12,008,622,079 al cierre del 2019, representando el 17% del total de activos del sector.</p>
-							</div>
-
-
-							<div class="card">
-								<p class="card__title">Cartera de cuentas</p>
-								<strong><p class="card__number">3,394</p></strong>
-								<p class="card__info">La cartera de cuentas de la empresa aumentó un 8% respecto al año anterior, llegando a diciembre 2020 a 3,394 cuentas de corretaje, en comparación con 3,138 al cierre de 2019. </p>
-							</div>
-						</div>
-
-						</div>
-						<div class="section5__right-box" style="--bg-img: url('../assets/img/section_5_perfil_1.png')">
-							<div class="section5__right-box__cards-performance">
-								<div class="card">
-										<p class="card__title">Cantidad de operaciones y cuentas de corretaje</p>
-										<strong><p class="card__number">28,766</p></strong>
-										<p class="card__info">El puesto de bolsa demostró una mejora sustancial en su capacidad operativa y transaccional, completando 28,766 operaciones en 2020.</p>
-								</div>
-								<div class="card">
-									<p class="card__title">Caliﬁcación de Riesgo</p>
-									<strong><p class="card__number">A-</p></strong>
-									<p class="card__info">Mantuvimos nuestra caliﬁcación de solvencia A- por tercer año consecutivo, con perspectivas estables por la caliﬁcadora Feller Rate. Esta caliﬁcación se sustenta en una adecuada capacidad de generación y respaldo patrimonial, que se acompaña de un adecuado perﬁl de riesgo, fondeo, liquidez y un moderado perﬁl de negocios..</p>
-								</div>
-								
-							</div>
-						</div>
-				</div>
-			</div>
-
-			<div class="section section6">
-				<div class="container">
-					<div class="section6__left-box">
-						
-						<div class="section6__left-box__cards-performance">
-							<div class="card">
-								<strong><p class="card__number">Mercado</p></strong>
-									<p class="card__title">Un terreno lleno de posibilidades <span>Participación mercado</span></p>
-									<p class="card__info">Cerramos el 2020 con un total de RD$3,052,573,104, lo que representa un  16% del total del patrimonio del sector.</p>
-							</div>
-						
-						</div>
-
-						</div>
-						<div class="section6__right-box" style="--bg-img: url('../assets/img/section_6_perfil_1.png')">
-							<div class="section6__right-box__cards-performance">
-								<div class="card">
-										<p class="card__title">Emisión de bonos</p>
-										<p class="card__info">El 5 de octubre de 2020 se colocó la primera y única emisión del Programa de Emisiones de Bonos Corporativos inscrito bajo el registro SIVEM-136 por un monto total de
+											
+								</div></div></div>
+	
+								<div class="box_img-employe level-2 a-top" style="--bg-img: url('../assets/img/section_3_perfil_4.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											El 2020 me recordo que en lo simple esta la grandeza y que con pequenas cosas hacemos maravillas.
 										</p>
-										<strong><p class="card__number">RD$1,000,000,000</p></strong>
-								</div>
-								<div class="card">
-									<p class="card__title"></p>
-									<p class="card__info">El 27 de abril de 2020, fecha
-										correspondiente al vencimiento del Programa de Emisiones de Bonos Corporativos colocado en el 2017, Alpha liquidó completamente y a tiempo el monto principal de
-										..</p>
-										<strong><p class="card__number">RD$2,000,000,000</p></strong>
-
-										<p class="card__info">más los intereses de la referida emisión a la satisfacción de los obligacionistas.</p>
-								</div>
+										<p class="sign">
+											- Magdelin Díaz
+											<span>Analista de Middle Office</span>
+										</p>
+											
+								</div></div></div>
+	
+								<div class="box_img-employe level-2 a-top"style="--bg-img: url('../assets/img/section_3_perfil_5.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											No sabia cuanta fuerza de voluntad tenia hasta que me vi en circunstancias que me llevaron a poner en practica aquello de lo que pense que no era capaz.
+										</p>
+										<p class="sign">
+											- Elba Salcedo
+											<span>Oficial de Control Interno</span>
+										</p>
+											
+								</div></div></div>
+	
+								<div class="box_img-employe level-2 a-bottom" style="--bg-img: url('../assets/img/section_3_perfil_6.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											El 2020 me demostro que los limites me los pongo yo misma
+										</p>
+										<p class="sign">
+											- Carol Then
+											<span>Gerente de Tecnología <br>
+												y Proyectos</span>
+										</p>
+											
+								</div></div></div>
+								<div class="box-fill"></div>
+								<div class="box-fill"></div>
+	
+								<div class="box_img-employe level-2 a-bottom" style="--bg-img: url('../assets/img/section_3_perfil_7.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											El ano que me demostro que lo mas importante son las relaciones humanas que tenemos, nuestra salud y paz, pues al final es lo que perdura y lo que nos da verdadera felicidad. 
+										</p>
+										<p class="sign">
+											- Stephannie Cobo
+											<span>Auxiliar de Operaciones</span>
+										</p>
+											
+								</div></div></div>
+	
+								<div class="box_img-employe level-2 a-top"style="--bg-img: url('../assets/img/section_3_perfil_8.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											Un beso, un abrazo y una caricia vale mas que todo el dinero del mundo.
+										</p>
+										<p class="sign">
+											- Idaissa Ferreras
+											<span>Oficial Junior Operaciones</span>
+										</p>
+											
+								</div></div></div>
+	
+								<div class="box_img-employe level-2 a-top" style="--bg-img: url('../assets/img/section_3_perfil_9.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											Aunque fuiste un ano duro, durisimo, tambien fuiste como un combustible que me permitio explotar virtudes oxidadas y tambien pusiste en evidencia algunos defectos y debilidades a los que debia hacerle frente. 
+										</p>
+										<p class="sign">
+											- Elizabeth Severino
+											<span>Gerente de Contabilidad</span>
+										</p>
+											
+								</div></div></div>
 								
+								<div class="box_img-employe level-2 a-bottom" style="--bg-img: url('../assets/img/section_3_perfil_10.png')">
+									<div class="opacity-bg">
+									<div class="box_img-employe__box-p">
+										<p class="p">
+											Nuestros miedos e incertidumbres  nos hicieron replantearnos y darnos cuenta de que la vida esta hecha de momentos y que somos responsables de definir como queremos vivirlos.  
+										</p>
+										<p class="sign">
+											- Annalie Pichardo
+											<span>Gerente de <br>
+												Servicio al Cliente</span>
+										</p>
+											
+								</div></div></div>
 							</div>
-						</div>
-				</div>
-			</div>
-
-			<div class="section section7">
-				<div class="container">
-					<div class="section7__left-box">
-						<div class="section7__left-box__title">
-							<h2>
-								Colaboradores
-							</h2>
-							<h3>Los optimistas
-								detrás de Alpha</h3>
-						</div>
-						<div class="section7__left-box__info">
-							<p>Creemos en el poder de nuestros colaboradores y su capacidad de lograr grandes resultados.</p>
-							<strong><p>Es por eso que nuestra Gente Alpha siguió creciendo, cerrando el 2020 con un total de 69 colaboradores</p></strong>
-						</div>
-
-						</div>
-						<div class="section7__right-box">
-							<div class="section7__right-box__left-box">
-								<p class="p1">Fuimos reconocidos por la firma Employers for Youth como la </p>
-								<strong><p class="p2">2da Mejor Empresa para Jóvenes Profesionales 
-									en la República 
-									Dominicana,</p></strong>
-								<p class="p1">consolidando nuestro objetivo de seguir impulsando el talento joven en el puesto. 
-								</p>
-								<div class="box-img">
-									<img src="./assets/img/section_7_logo_1.png" alt="brand employe">
-								</div>
-							</div>
-							<div class="box-img-employes">
-								<div class="box-img">
-									<img src="./assets/img/section_7_perfil_1.png" alt="">
-								</div>
-							</div>
-						</div>
-				</div>
-			</div>
-
-			<div class="section section8">
-				<div class="container">
-					<div class="section8__left-box">
-						<div class="section8__left-box__title">
-							<h2>
-								La transformación de nuestra cultura
-							</h2>
-						</div>
-						<div class="section8__left-box__info">
-							<p>La cultura organizacional se convierte en el activo más importante para seguir liderando el mercado en el cual nos desenvolvemos, el cual tiene un impacto directo en el desarrollo y bienestar de nuestra sociedad. </p>
-							<strong><p>Es por esto por lo que trabajamos una nueva filosofía corporativa más centrada en la gente. </p></strong>
-						</div>
-
-						<div class="section8__left-box__img">
-							<img src="./assets/img/section_8_perfil_1.png" alt="group of people">
-						</div>
-						</div>
-						<div class="section8__right-box">
-							<div class="section8__right-box__left-box">
-								<h2 class="title">Lanzamiento nueva 
-									filosofía corporativa</h2>
-								<p class="p1">Celebramos de forma virtual junto a nuestros colaboradores nuestra nueva filosofía corporativa más centrada en la gente.</p>
-								
-								<div class="rotate-text">
-									<span>Nuestro propósito:
-									</span>
-									<p>Transformar positivamente
-										el bienestar financiero de las
-										personas, de sus empresas y
-										de nuestro país.</p>
-								</div>
-								
-							</div>
-							<div class="box-img-computer">
-								<div class="box-img">
-									<img src="./assets/img/section_8_perfil_2.png" alt="">
-								</div>
-							</div>
-						</div>
-				</div>
-			</div>
-
-			<div class="section section9">
-				<div class="container">
-					<div class="section9__left-box">
-						<div class="card">
-							<strong><p class="card__title">Apoyo bienestar colaboradores</p></strong>
-							<p class="card__info">El apoyo al bienestar de nuestros colaboradores fue un pilar fundamental para continuar con nuestras operaciones, mientras <strong>cuidamos de la salud física y emocional de nuestra gente.</strong>
-							</p>
-							<p class="card__info">Abrimos canales de ayuda para nuestros colaboradores, como sesiones con profesionales de la psicología para el apoyo integral en momentos de incertidumbre, con más de </p>
-							<strong><p class="card__number">80<span>Horas</span></p></strong>
-							<p class="card__info">de consulta registradas.</p>
 					</div>
-						</div>
-						<div class="section9__right-box">
-							<div class="section9__right-box__info">
-								<div class="title"><p><strong>Programa
-									Alpha Mentor</strong></p></div>
-								<div class="paragraphs">
-									<p class="p1">El programa está enfocado en <strong>potenciar el talento del mentee a través de apoyarle en el fortalecimiento de sus áreas de mejora</strong>, reforzando el espíritu de innovación, desarrollo y fortalecimiento de la cultura Alpha.</p>
-									<p class="p2">Los directores del puesto de bolsa tuvieron a su cargo en esta primera fase 4 colaboradores seleccionados por sus grandes aptitudes y oportunidades de crecimiento.</p>
+				</section>
+	
+				<div class="section section4">
+					<div class="container">
+						<div class="section4__left-box">
+							<div class="box-img-oportunities">
+								<div class="box-img-oportunities__img-box level-3 a-random" style="--bg-img: url('../assets/img/section_4_perfil_1.png')">
+									
+								</div>
+								<div class="box-img-oportunities__img-box level-2 a-random"  style="--bg-img: url('../assets/img/section_4_perfil_2.png')">
+									
+								</div>
+								<div></div>
+								<div></div>
+								<div class="box-img-oportunities__img-box level-2 a-random" style="--bg-img: url('../assets/img/section_4_perfil_3.png')">
+									
+								</div>
+								<div class="box-img-oportunities__img-box level-3 a-random" style="--bg-img: url('../assets/img/section_4_perfil_4.png')">
+									
 								</div>
 							</div>
-							<div class="section9__right-box__img-info">
-								<div class="box-img">
-									<img src="./assets/img/section_9_perfil_1.png" alt="group people">
-								</div>
+						</div>
+						<div class="section4__right-box">
+							<div class="section4__right-box__content">
 								<div class="info">
-									<p><strong>Melissa Suárez, José Abraham Cordero, Laura González y Laura Núñez</strong> fueron los mentees seleccionados para participar de la primera fase de nuestro Programa Alpha Mentor.</p>
+									<h2 class="a-bottom">Transformando las dificultades <br> en oportunidades</h2>
+								<p class="a-top">En marzo de 2020, la nueva normalidad llegó y <strong>
+									tuvimos que rápidamente hacer la transición al teletrabajo
+								</strong>. Pudimos adaptarnos de forma rápida y eficaz, siendo el primer puesto de bolsa en implementar esta modalidad para todos nuestros colaboradores.</p>
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
-			</div>
-
-			<div class="section section10">
-				<div class="container">
-					<div class="section10__left-box">
-						<div class="section10__left-box__title">
-							<h2>
-								Posicionamiento
-							</h2>
-						</div>
-						<div class="section10__left-box__info">
-							<p>Somos una de las empresas más admiradas Revista Mercado nos ratificó por Manual de Crisis segundo año consecutivo en la posición #1 del ranking Empresas Más Admiradas, en la categoría de puestos de bolsa.</p>
-
-							<p>Seguimos impulsando el mercado de valores a través de contenido educativo para los futuros inversionistas.
-							</p>
-
-							<p><strong>En septiembre del 2020, lanzamos nuestro podcast Alpha View, con el propósito de demostrar que invertir en el mercado de valores dominicano es más fácil de lo que parece.
-							</strong></p>
-						</div>
-
-						<div class="section10__left-box__img">
-							<img src="./assets/img/section_10_perfil_1.png" alt="group of people">
-						</div>
-						</div>
-						<div class="section10__right-box">
-							<div class="section10__right-box__video">
-								<iframe src="https://www.youtube-nocookie.com/embed/L4nY6LDd4zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+				<div class="section section5">
+					<div class="container">
+						<div class="section5__left-box">
+							<div class="section5__left-box__title a-bottom">
+								<h2>
+									Desempeño
+								</h2>
+								<h3>Razones para creer</h3>
 							</div>
-							<div class="section10__right-box__info">
-								<div class="title"><p><strong>Programa
-									Alpha Mentor</strong></p></div>
-								<div class="paragraphs">
-									<p class="p1">El programa está enfocado en <strong>potenciar el talento del mentee a través de apoyarle en el fortalecimiento de sus áreas de mejora</strong>, reforzando el espíritu de innovación, desarrollo y fortalecimiento de la cultura Alpha.</p>
-									<p class="p2">Los directores del puesto de bolsa tuvieron a su cargo en esta primera fase 4 colaboradores seleccionados por sus grandes aptitudes y oportunidades de crecimiento.</p>
+							<div class="section5__left-box__cards-performance">
+								<div class="card a-staggering-right">
+										<p class="card__title">Patrimonio</p>
+										<strong><p class="card__number">16<span>%</span></p></strong>
+										<p class="card__info">Cerramos el 2020 con un total de RD$3,052,573,104, lo que representa un  16% del total del patrimonio del sector.</p>
+								</div>
+								<div class="card a-staggering-right">
+									<p class="card__title">Resultado Neto</p>
+									<strong><p class="card__number">18<span>%</span></p></strong>
+									<p class="card__info">Reportamos un resultado neto ascendente a RD$1,020,044,220, el cual representa el 18% del resultado total del sector.</p>
+								</div>
+								<div class="card a-staggering-right">
+									<p class="card__title">Activos</p>
+									<strong><p class="card__number">16<span>%</span></p></strong>
+									<p class="card__info">Nuestros activos totales alcanzaron RD$12,008,622,079 al cierre del 2019, representando el 17% del total de activos del sector.</p>
+								</div>
+	
+	
+								<div class="card a-staggering-right">
+									<p class="card__title">Cartera de cuentas</p>
+									<strong><p class="card__number">3,394</p></strong>
+									<p class="card__info">La cartera de cuentas de la empresa aumentó un 8% respecto al año anterior, llegando a diciembre 2020 a 3,394 cuentas de corretaje, en comparación con 3,138 al cierre de 2019. </p>
 								</div>
 							</div>
-						</div>
+	
+							</div>
+							<div class="section5__right-box" style="--bg-img: url('../assets/img/section_5_perfil_1.png')">
+								<div class="section5__right-box__cards-performance">
+									<div class="card a-staggering-left">
+											<p class="card__title">Cantidad de operaciones y cuentas de corretaje</p>
+											<strong><p class="card__number">28,766</p></strong>
+											<p class="card__info">El puesto de bolsa demostró una mejora sustancial en su capacidad operativa y transaccional, completando 28,766 operaciones en 2020.</p>
+									</div>
+									<div class="card a-staggering-left">
+										<p class="card__title">Caliﬁcación de Riesgo</p>
+										<strong><p class="card__number">A-</p></strong>
+										<p class="card__info">Mantuvimos nuestra caliﬁcación de solvencia A- por tercer año consecutivo, con perspectivas estables por la caliﬁcadora Feller Rate. Esta caliﬁcación se sustenta en una adecuada capacidad de generación y respaldo patrimonial, que se acompaña de un adecuado perﬁl de riesgo, fondeo, liquidez y un moderado perﬁl de negocios..</p>
+									</div>
+									
+								</div>
+							</div>
+					</div>
 				</div>
-			</div>
-
-			<div class="section section11">
-				<div class="container">
-					<div class="section11__left-box">
-						<div class="section11__left-box__title">
-							<h2>
-								Transformación
-							</h2>
+	
+				<div class="section section6">
+					<div class="container">
+						<div class="section6__left-box">
+							
+							<div class="section6__left-box__cards-performance">
+								<div class="card a-random">
+									<strong><p class="card__number">Mercado</p></strong>
+										<p class="card__title">Un terreno lleno de posibilidades <span>Participación mercado</span></p>
+										<p class="card__info">Cerramos el 2020 con un total de RD$3,052,573,104, lo que representa un  16% del total del patrimonio del sector.</p>
+								</div>
+							
+							</div>
+	
+							</div>
+							<div class="section6__right-box" style="--bg-img: url('../assets/img/section_6_perfil_1.png')">
+								<div class="section6__right-box__cards-performance">
+									<div class="card a-random">
+											<p class="card__title">Emisión de bonos</p>
+											<p class="card__info">El 5 de octubre de 2020 se colocó la primera y única emisión del Programa de Emisiones de Bonos Corporativos inscrito bajo el registro SIVEM-136 por un monto total de
+											</p>
+											<strong><p class="card__number">RD$1,000,000,000</p></strong>
+									</div>
+									<div class="card a-random">
+										<p class="card__title"></p>
+										<p class="card__info">El 27 de abril de 2020, fecha
+											correspondiente al vencimiento del Programa de Emisiones de Bonos Corporativos colocado en el 2017, Alpha liquidó completamente y a tiempo el monto principal de
+											..</p>
+											<strong><p class="card__number">RD$2,000,000,000</p></strong>
+	
+											<p class="card__info">más los intereses de la referida emisión a la satisfacción de los obligacionistas.</p>
+									</div>
+									
+								</div>
+							</div>
+					</div>
+				</div>
+	
+				<div class="section section7">
+					<div class="container">
+						<div class="section7__left-box">
+							<div class="section7__left-box__title">
+								<h2 class="a-bottom">
+									Colaboradores
+								</h2>
+								<h3 class="a-bottom">Los optimistas
+									detrás de Alpha</h3>
+							</div>
+							<div class="section7__left-box__info a-bottom">
+								<p>Creemos en el poder de nuestros colaboradores y su capacidad de lograr grandes resultados.</p>
+								<strong><p>Es por eso que nuestra Gente Alpha siguió creciendo, cerrando el 2020 con un total de 69 colaboradores</p></strong>
+							</div>
+	
+							</div>
+							<div class="section7__right-box">
+								<div class="section7__right-box__left-box">
+									<p class="p1 scale-rotate">Fuimos reconocidos por la firma Employers for Youth como la </p>
+									<strong><p class="p2 a-left">2da Mejor Empresa para Jóvenes Profesionales 
+										en la República 
+										Dominicana,</p></strong>
+									<p class="p1 scale-rotate">consolidando nuestro objetivo de seguir impulsando el talento joven en el puesto. 
+									</p>
+									<div class="box-img a-right">
+										<img src="./assets/img/section_7_logo_1.png" alt="brand employe">
+									</div>
+								</div>
+								<div class="box-img-employes a-bottom">
+									<div class="box-img">
+										<img src="./assets/img/section_7_perfil_1.png" alt="">
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+	
+				<div class="section section8">
+					<div class="container">
+						<div class="section8__left-box">
+							<div class="section8__left-box__title a-left">
+								<h2>
+									La transformación de nuestra cultura
+								</h2>
+							</div>
+							<div class="section8__left-box__info a-left">
+								<p>La cultura organizacional se convierte en el activo más importante para seguir liderando el mercado en el cual nos desenvolvemos, el cual tiene un impacto directo en el desarrollo y bienestar de nuestra sociedad. </p>
+								<strong><p>Es por esto por lo que trabajamos una nueva filosofía corporativa más centrada en la gente. </p></strong>
+							</div>
+	
+							<div class="section8__left-box__img a-top">
+								<img src="./assets/img/section_8_perfil_1.png" alt="group of people">
+							</div>
+							</div>
+							<div class="section8__right-box">
+								<div class="section8__right-box__left-box a-right">
+									<h2 class="title">Lanzamiento nueva 
+										filosofía corporativa</h2>
+									<p class="p1">Celebramos de forma virtual junto a nuestros colaboradores nuestra nueva filosofía corporativa más centrada en la gente.</p>
+									
+									<div class="rotate-text">
+										<span>Nuestro propósito:
+										</span>
+										<p>Transformar positivamente
+											el bienestar financiero de las
+											personas, de sus empresas y
+											de nuestro país.</p>
+									</div>
+									
+								</div>
+								<div class="box-img-computer a-top">
+									<div class="box-img">
+										<img src="./assets/img/section_8_perfil_2.png" alt="">
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+	
+				<div class="section section9">
+					<div class="container">
+						<div class="section9__left-box">
+							<div class="card a-random">
+								<strong><p class="card__title">Apoyo bienestar colaboradores</p></strong>
+								<p class="card__info">El apoyo al bienestar de nuestros colaboradores fue un pilar fundamental para continuar con nuestras operaciones, mientras <strong>cuidamos de la salud física y emocional de nuestra gente.</strong>
+								</p>
+								<p class="card__info">Abrimos canales de ayuda para nuestros colaboradores, como sesiones con profesionales de la psicología para el apoyo integral en momentos de incertidumbre, con más de </p>
+								<strong><p class="card__number">80<span>Horas</span></p></strong>
+								<p class="card__info">de consulta registradas.</p>
 						</div>
-						<div class="section11__left-box__info">
-							<p>Seguimos democratizando el mercado de valores con el lanzamiento de <strong>Alpha Express, el primer y único servicio en el país que permite completar todo el proceso de apertura de cuenta de corretaje en línea en menos de dos días</strong>, por lo que es más ágil y amigable, con menos requisitos que una cuenta de corretaje tradicional.
-								.</p>
-
-							<p>En octubre, lanzamos una campaña donde invitamos a los dominicanos a darle paso a la era de invertir, abriendo su cuenta de corretaje de forma fácil, rápida y completamente digital.
-							</p>
-
-						</div>
-
-						<div class="section11__left-box__brand">
-							<img src="./assets/img/logo2.png" alt="brand">
-						</div>
-
-						<div class="section11__left-box__img">
-							<img src="./assets/img/section_11_perfil_1.png" alt="group of people">
-						</div>
-						</div>
-						<div class="section11__right-box">
-							<div class="section11__right-box__info">
-								<div class="title"><h2><strong>Responsabilidad social</strong></h2><p>La pandemia nos impidió salir a plantar árboles, pero no nos impidió <strong>sembrar ilusión en nuestra gente.</strong> </p></div>
-								<div class="paragraphs">
-									<div class="paragraphs__box-p">
-										<h2>Valla Reusable</h2>
-										<p class="p1">A principios del 2019 decidimos <strong> reutilizar la valla de nuestra última campaña publicitaria, transformándola en más de 1,000 fundas reusables.</strong> En el 2020, se continuó con este proyecto, logrando formalizar a Valla Reusable como una empresa sostenible en el tiempo. Hoy en día, se continúan produciendo artículos con material de vallas publicitarias para la venta retail y corporativa.
+							</div>
+							<div class="section9__right-box">
+								<div class="section9__right-box__info a-bottom">
+									<div class="title"><p><strong>Programa
+										Alpha Mentor</strong></p></div>
+									<div class="paragraphs">
+										<p class="p1">El programa está enfocado en <strong>potenciar el talento del mentee a través de apoyarle en el fortalecimiento de sus áreas de mejora</strong>, reforzando el espíritu de innovación, desarrollo y fortalecimiento de la cultura Alpha.</p>
+										<p class="p2">Los directores del puesto de bolsa tuvieron a su cargo en esta primera fase 4 colaboradores seleccionados por sus grandes aptitudes y oportunidades de crecimiento.</p>
+									</div>
+								</div>
+								<div class="section9__right-box__img-info a-top">
+									<div class="box-img">
+										<img src="./assets/img/section_9_perfil_1.png" alt="group people">
+									</div>
+									<div class="info a-right">
+										<p><strong>Melissa Suárez, José Abraham Cordero, Laura González y Laura Núñez</strong> fueron los mentees seleccionados para participar de la primera fase de nuestro Programa Alpha Mentor.</p>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+	
+				<div class="section section10">
+					<div class="container">
+						<div class="section10__left-box">
+							<div class="section10__left-box__title">
+								<h2>
+									Posicionamiento
+								</h2>
+							</div>
+							<div class="section10__left-box__info">
+								<p>Somos una de las empresas más admiradas Revista Mercado nos ratificó por Manual de Crisis segundo año consecutivo en la posición #1 del ranking Empresas Más Admiradas, en la categoría de puestos de bolsa.</p>
+	
+								<p>Seguimos impulsando el mercado de valores a través de contenido educativo para los futuros inversionistas.
+								</p>
+	
+								<p><strong>En septiembre del 2020, lanzamos nuestro podcast Alpha View, con el propósito de demostrar que invertir en el mercado de valores dominicano es más fácil de lo que parece.
+								</strong></p>
+							</div>
+	
+							<div class="section10__left-box__img">
+								<img src="./assets/img/section_10_perfil_1.png" alt="group of people">
+							</div>
+							</div>
+							<div class="section10__right-box">
+								<div class="section10__right-box__video">
+									<iframe src="https://www.youtube-nocookie.com/embed/L4nY6LDd4zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="section10__right-box__info">
+									<div class="title"><p><strong>Programa
+										Alpha Mentor</strong></p></div>
+									<div class="paragraphs">
+										<p class="p1">El programa está enfocado en <strong>potenciar el talento del mentee a través de apoyarle en el fortalecimiento de sus áreas de mejora</strong>, reforzando el espíritu de innovación, desarrollo y fortalecimiento de la cultura Alpha.</p>
+										<p class="p2">Los directores del puesto de bolsa tuvieron a su cargo en esta primera fase 4 colaboradores seleccionados por sus grandes aptitudes y oportunidades de crecimiento.</p>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+	
+				<div class="section section11">
+					<div class="container">
+						<div class="section11__left-box">
+							<div class="section11__left-box__title">
+								<h2>
+									Transformación
+								</h2>
+							</div>
+							<div class="section11__left-box__info">
+								<p>Seguimos democratizando el mercado de valores con el lanzamiento de <strong>Alpha Express, el primer y único servicio en el país que permite completar todo el proceso de apertura de cuenta de corretaje en línea en menos de dos días</strong>, por lo que es más ágil y amigable, con menos requisitos que una cuenta de corretaje tradicional.
+									.</p>
+	
+								<p>En octubre, lanzamos una campaña donde invitamos a los dominicanos a darle paso a la era de invertir, abriendo su cuenta de corretaje de forma fácil, rápida y completamente digital.
+								</p>
+	
+							</div>
+	
+							<div class="section11__left-box__brand">
+								<img src="./assets/img/logo2.png" alt="brand">
+							</div>
+	
+							<div class="section11__left-box__img">
+								<img src="./assets/img/section_11_perfil_1.png" alt="group of people">
+							</div>
+							</div>
+							<div class="section11__right-box">
+								<div class="section11__right-box__info">
+									<div class="title"><h2><strong>Responsabilidad social</strong></h2><p>La pandemia nos impidió salir a plantar árboles, pero no nos impidió <strong>sembrar ilusión en nuestra gente.</strong> </p></div>
+									<div class="paragraphs">
+										<div class="paragraphs__box-p">
+											<h2>Valla Reusable</h2>
+											<p class="p1">A principios del 2019 decidimos <strong> reutilizar la valla de nuestra última campaña publicitaria, transformándola en más de 1,000 fundas reusables.</strong> En el 2020, se continuó con este proyecto, logrando formalizar a Valla Reusable como una empresa sostenible en el tiempo. Hoy en día, se continúan produciendo artículos con material de vallas publicitarias para la venta retail y corporativa.
+											</p>
+										</div>
+										<div class="paragraphs__box-p">
+											<h2>Donaciones a más vulnerables
+												frente al COVID-19</h2>
+										<p class="p2">Creemos firmemente que la unión de esfuerzos y recursos genera grandes resultados. Es por eso que concentramos nuestros esfuerzos en aliviar a los más vulnerables frente al COVID-19, logrando impactar a miles de personas con donaciones y asistencia humanitaria en varias localidades de la República Dominicana.
 										</p>
 									</div>
-									<div class="paragraphs__box-p">
-										<h2>Donaciones a más vulnerables
-											frente al COVID-19</h2>
-									<p class="p2">Creemos firmemente que la unión de esfuerzos y recursos genera grandes resultados. Es por eso que concentramos nuestros esfuerzos en aliviar a los más vulnerables frente al COVID-19, logrando impactar a miles de personas con donaciones y asistencia humanitaria en varias localidades de la República Dominicana.
-									</p>
-								</div>
+									</div>
 								</div>
 							</div>
+					</div>
+				</div>
+	
+				<div class="section section12">
+					<div class="container">
+						<div class="section12__left-box">
+							<div class="title">
+								<h2>¿Quieres seguir
+									viendo nuestra
+									historia del 2020?</h2>
+							</div>
+							<div class="brand">
+								<img src="./assets/img/logo.png" alt="">
+							</div>
 						</div>
+							<div class="section12__right-box" style="--bg-img: url('../assets/img/section_12_perfil_1.png')">
+								
+							</div>
+					</div>
 				</div>
 			</div>
+			
 		</main>
 
 		<script src="./app.js" type="module"></script>

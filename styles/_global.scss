@@ -14,19 +14,15 @@ body {
 	height: inherit;
 	width: 100vw;
 	max-height: 100vh;
+	overflow: hidden;
+}
+
+.carrusel {
 	display: flex;
 	transition: all 0.5s;
-
-	/* overflow-y: scroll; */
-	/* -ms-overflow-style: none;
-	overflow: -moz-scrollbars-none;
-	scrollbar-width: none;
-	scroll-behavior: smooth; */
-
-	/* 	&::-webkit-scrollbar {
-		display: none;
-	} */
-	/* overflow: hidden; */
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .container {

@@ -1,78 +1,45 @@
-const $sliderContainer = document.getElementById("main-container"),
+const $sliderContainer = document.getElementById("carrusel"),
 	$boxBtns = document.getElementById("box-btns"),
-	sliderContainerProperty = $sliderContainer.getBoundingClientRect();
-
-/* function showBtn() {
-	carouselProperty.width >= carouselItemsProperty.width
-		? (carouselBtn.style.display = "none")
-		: (carouselBtn.style.display = "initial");
-
-	carouselItems.clientLeft > 0
-		? (carouselBtn.firstElementChild.style.display = "initial")
-		: (carouselBtn.firstElementChild.style.display = "none");
-} */
-//showBtn();
+	$sections = document.querySelectorAll(".section");
 
 let pageTranslate = 0;
+let countClick = 0;
+let $nextBtn = $boxBtns.lastElementChild;
 
-export default function handleCarruser() {
-	$boxBtns.addEventListener("click", (e) => {
-		const elem = e.target;
-
-		if (elem.matches("#preview") && pageTranslate > 0) {
-			console.log("entre aqui");
-			pageTranslate -= window.innerWidth;
-			pageTranslate = pageTranslate < 0 ? 0 : pageTranslate;
-			$sliderContainer.style.transform = `translateX(-${pageTranslate}px)`;
-		}
-
-		if (elem.matches("#next")) {
-			pageTranslate += window.innerWidth;
-			$sliderContainer.style.transform = `translateX(-${pageTranslate}px)`;
-		}
-		/* ($sliderContainer.style.right = `${window.innerWidth}px`); */
-		/* window.scrollTo(window.scrollX - window.innerWidth, 0); */
-		elem.matches("#next") &&
-			/* ($sliderContainer.style.left = `-${window.innerWidth}px`); */
-			/* window.scrollTo(window.innerWidth + window.scrollX, 0); */
-
-			console.log({
-				s: window.scrollX,
-				iw: window.innerWidth,
-				d: sliderContainerProperty.width,
-				dc: $sliderContainer.offsetWidth,
-			});
-
-		/* $sliderContainer.style.transform = `translateX(-${
-			window.innerWidth / 2
-		}px)`; */
-	});
-}
-
-/* function moveCarousel(side) {
-	const itemsWidth = carouselItemsProperty.width;
-
-	switch (side) {
-		case "left": {
-			if (itemsTranslateShow - itemsWidth >= 0) {
-				itemsTranslateShow -= itemsWidth;
-			} else {
-				itemsTranslateShow -= itemsTranslateShow;
-			}
-			break;
-		}
-		case "right": {
-			if (itemsTranslateShow + itemsWidth <= itemsTranslateValue) {
-				itemsTranslateShow += itemsWidth;
-			} else {
-				itemsTranslateShow += itemsTranslateValue - itemsTranslateShow;
-			}
-			break;
+const handleButton = ($btn) => {
+	if (countClick === 0) {
+		$boxBtns.style.display = "none";
+		return;
+	} else {
+		$boxBtns.style.display = "initial";
+		if ($btn.matches("#next") && countClick === $sections.length) {
+			$btn.style.display = "none";
+		} else {
+			$nextBtn.style.display = "initial";
 		}
 	}
+};
 
-	carouselItems.style.transform = `translateX(-${itemsTranslateShow}px)`;
+handleButton();
 
-	console.log({ itemsWidth, itemsTranslateValue, itemsTranslateShow });
+export default function handleCarruser() {
+	document.addEventListener("click", (e) => {
+		const elem = e.target;
+		if (countClick <= $sections.length && countClick >= 0) {
+			if (elem.matches("#preview") && pageTranslate > 0) {
+				pageTranslate -= window.innerWidth;
+				pageTranslate = pageTranslate < 0 ? 0 : pageTranslate;
+				$sliderContainer.style.transform = `translateX(-${pageTranslate}px)`;
+				countClick--;
+				handleButton(elem);
+			}
+
+			if (elem.matches("#next") && countClick < $sections.length) {
+				pageTranslate += window.innerWidth;
+				$sliderContainer.style.transform = `translateX(-${pageTranslate}px)`;
+				countClick++;
+				handleButton(elem);
+			}
+		}
+	});
 }
- */

@@ -368,20 +368,19 @@ body {
   height: inherit;
   width: 100vw;
   max-height: 100vh;
+  overflow: hidden;
+}
+
+.carrusel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  /* overflow-y: scroll; */
-  /* -ms-overflow-style: none;
-	overflow: -moz-scrollbars-none;
-	scrollbar-width: none;
-	scroll-behavior: smooth; */
-  /* 	&::-webkit-scrollbar {
-		display: none;
-	} */
-  /* overflow: hidden; */
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -525,8 +524,10 @@ body {
   font-size: 6rem;
 }
 
-.section1__info__text-memoria a {
-  text-decoration: none;
+.section1__info__text-memoria button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
   display: inline-block;
   border: none;
@@ -540,14 +541,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 
-.section1__info__text-memoria a .fas {
+.section1__info__text-memoria button .fas {
   background-color: #f0ece8;
   color: #80663c;
   padding: 10px;
   width: 20px;
   height: 20px;
+  font-size: 1.2rem;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2035,6 +2038,143 @@ body {
   text-decoration: underline;
 }
 
+/* Fonts */
+@font-face {
+  font-family: "Guther";
+  src: url("../assets/fonts/Guther.ttf") format("truetype");
+}
+
+.section12 {
+  /* display: none; */
+  min-width: 100vw;
+}
+
+.section12 .container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(400px, 35%) auto;
+      grid-template-columns: minmax(400px, 35%) auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section12 .container {
+  -ms-grid-columns: (minmax(400px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(400px, 1fr));
+}
+
+.section12__left-box {
+  background-color: #f0ece8;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  z-index: 1;
+}
+
+.section12__left-box .title h2 {
+  font-size: 2.8rem;
+  max-width: 400px;
+  color: #80663c;
+}
+
+.section12__left-box .brand {
+  max-width: 200px;
+}
+
+.section12__left-box .brand img {
+  width: 100%;
+}
+
+.section12__right-box {
+  background-image: var(--bg-img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section12__right-box__title h2 {
+  color: #80663c;
+  font-size: 2.5rem;
+}
+
+.section12__right-box__title h3 {
+  color: #4b5b73;
+  font-size: 1rem;
+}
+
+.section12__right-box__cards-performance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-width: 540px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 100px;
+}
+
+.section12__right-box__cards-performance .card {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 25px 20px;
+  width: 250px;
+  background-color: #ffffff;
+}
+
+.section12__right-box__cards-performance .card:first-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.section12__right-box__cards-performance .card__title {
+  color: #4b5b73;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4b5b73;
+  font-size: 1.15rem;
+  margin: 0;
+  font-weight: 800;
+}
+
+.section12__right-box__cards-performance .card__number {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+  color: #80663c;
+}
+
+.section12__right-box__cards-performance .card__number span {
+  font-size: 2rem;
+  color: #b3a79c;
+  margin-left: -15px;
+}
+
+.section12__right-box__cards-performance .card__info {
+  color: #4b5b73;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
 /* ---------------------Media Queries-------------------- */
 @media (max-width: 575.98px) {
   /*------------------ Section 1 ------------------*/
@@ -2067,7 +2207,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main-container {
+  .carrusel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -44,6 +44,9 @@
 //Pantallas pequeñas (móviles en landscape de menos de 768px)
 @media (max-width: 768px) {
 	.main-container {
+	}
+
+	.carrusel {
 		flex-direction: column;
 		overflow: visible;
 	}
