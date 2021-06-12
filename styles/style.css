@@ -457,6 +457,11 @@ body {
   background-color: #ffffff;
 }
 
+.box-btns .btn.isActive {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* Styles section #1 */
 /* Fonts */
 @font-face {

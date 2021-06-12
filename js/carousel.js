@@ -1,3 +1,5 @@
+import spyElements from "./spyElements.js";
+
 const $sliderContainer = document.getElementById("carrusel"),
 	$boxBtns = document.getElementById("box-btns"),
 	$sections = document.querySelectorAll(".section");
@@ -7,15 +9,16 @@ let countClick = 0;
 let $nextBtn = $boxBtns.lastElementChild;
 
 const handleButton = ($btn) => {
+	spyElements();
 	if (countClick === 0) {
 		$boxBtns.style.display = "none";
 		return;
 	} else {
 		$boxBtns.style.display = "initial";
 		if ($btn.matches("#next") && countClick === $sections.length) {
-			$btn.style.display = "none";
+			$btn.classList.add("isActive");
 		} else {
-			$nextBtn.style.display = "initial";
+			$nextBtn.classList.remove("isActive");
 		}
 	}
 };
