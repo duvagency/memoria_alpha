@@ -26,14 +26,14 @@
 
 		<!-- Styles -->
 		<link rel="stylesheet" href="./styles/style.css" />
-
 		<title>Memoria Alpha</title>
 	</head>
 	<body>
 		<script src="./js/anime.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
 		<div class="box-btns" id="box-btns">
-			<button class="btn btn-preview" id="preview"><i class="fas fa-chevron-left"></i></button>
 			<button class="btn btn-next" id="next"><i class="fas fa-chevron-right"></i></button>
+			<button class="btn btn-preview" id="preview"><i class="fas fa-chevron-left"></i></button>
 		</div>
 		<main class="main-container" id="main-container">
 			<div class="carrusel" id="carrusel">
@@ -68,14 +68,14 @@
 	
 				<section class="section section2">
 					<div class="container">
-						<div class="section2__left-box left-box">
+						<div class="section2__left-box">
 							<div class="section2__left-box__content">
-								<p class="p1" data-animation="a-left">
+								<p class="p1 a-left">
 									Detrás de los logros del 2020, existe un gran equipo dispuesto a
 									dar la milla extra, que con cercanía y complicidad, pudo
 									adaptarse al cambio con resultados extraordinarios.
 								</p>
-								<p class="p2" data-animation="a-left">
+								<p class="p2 a-left">
 									Nuestra gente evidenció que la motivación de transformar
 									positivamente el bienestar financiero de las personas, de las
 									empresas y nuestro país es lo que nos mueve.
@@ -83,7 +83,7 @@
 							</div>
 						</div>
 						<div class="section2__right-box">
-							<div class="box-p1 box-p" data-animation="a-left">
+							<div class="box-p1 box-p rotate">
 								<p class="p1">
 									Creemos firmemente en la democratizacion del mercado de valores;
 									trabajamos en buscar soluciones innovadoras para que el mercado
@@ -94,7 +94,7 @@
 								</p>
 									<span>Vicepresidente Ejecutivo</span>
 						</div>
-						<div class="box-p2 box-p" data-animation="a-left">
+						<div class="box-p2 box-p rotate">
 							<p class="p2">
 								Los retos no desaparecen y en Alpha siempre seguiremos comprometidos con la excelencia, las relaciones a largo plazo y un futuro mejor para nuestro país.
 							</p>
@@ -588,7 +588,8 @@
 									historia  2020?</h2>
 							</div>
 							<div class="brand scale-rotate">
-								<img src="./assets/img/logo.png" alt="">
+								<div class="box-brand"><img src="./assets/img/logo3.png" alt=""></div>
+								<div class="box-icon"><img src="./assets/img/icon.png" alt=""></div>
 							</div>
 						</div>
 							<div class="section12__right-box a-random" style="--bg-img: url('../assets/img/section_12_perfil_1.png')">
@@ -599,7 +600,6 @@
 			</div>
 			
 		</main>
-
 		<script src="./app.js" type="module"></script>
 	</body>
 </html>

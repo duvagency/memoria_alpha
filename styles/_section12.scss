@@ -28,7 +28,16 @@
 		}
 
 		.brand {
+			display: flex;
 			max-width: 200px;
+			justify-content: center;
+			align-items: center;
+			.box-brand {
+				width: 75%;
+			}
+			.box-icon {
+				width: 25%;
+			}
 			img {
 				width: 100%;
 			}
@@ -41,62 +50,5 @@
 		padding: 30px;
 		display: flex;
 		align-items: flex-end;
-		&__title {
-			h2 {
-				color: $secondary-text-color;
-				font-size: 2.5rem;
-			}
-			h3 {
-				color: $primary-text-color;
-				font-size: 1rem;
-			}
-		}
-
-		&__cards-performance {
-			display: flex;
-			height: 100%;
-			max-width: 540px;
-			flex-wrap: wrap;
-			gap: 20px;
-			margin-left: 100px;
-			.card {
-				height: max-content;
-				padding: 25px 20px;
-				width: 250px;
-				background-color: $secondary-color;
-
-				&:first-child {
-					align-self: flex-end;
-				}
-
-				&__title {
-					color: $primary-text-color;
-					padding-bottom: 10px;
-					border-bottom: 1px solid $fourth-color;
-					font-size: 1.15rem;
-					margin: 0;
-					font-weight: 800;
-				}
-
-				&__number {
-					text-align: center;
-					font-size: 1.4rem;
-					margin: 0;
-					color: $secondary-text-color;
-
-					span {
-						font-size: 2rem;
-						color: #b3a79c;
-						margin-left: -15px;
-					}
-				}
-
-				&__info {
-					color: $primary-text-color;
-					font-size: 0.8rem;
-					line-height: 1.5;
-				}
-			}
-		}
 	}
 }

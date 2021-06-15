@@ -2,7 +2,7 @@
 @import "./mixin";
 
 .section6 {
-	display: none;
+	/* display: none; */
 	@include repeatContainer;
 	min-width: 100vw;
 
@@ -59,6 +59,7 @@
 
 	&__right-box {
 		@include addBg-img(var(--bg-img));
+		background-position: top;
 		position: relative;
 		padding: 30px;
 		display: flex;

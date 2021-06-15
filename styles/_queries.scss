@@ -6,8 +6,8 @@
 	}
 
 	.main-container {
-		/* 	overflow-y: scroll; */
-		overflow: scroll;
+		overflow-y: scroll;
+		/* overflow: scroll; */
 	}
 
 	.container {
@@ -107,9 +107,9 @@
 		&__right-box {
 			overflow-x: hidden;
 			&__content {
-				height: 500px;
+				min-height: 0;
 				grid-template-columns: repeat(5, minmax(300px, 500px));
-				grid-template-rows: repeat(4, 1fr);
+				grid-template-rows: repeat(4, 180px);
 				gap: 5px;
 
 				.box_img-employe.level-1 {
@@ -223,8 +223,15 @@
 	}
 
 	.section5 {
+		width: 100vw;
 		margin-top: 100px;
+		margin-bottom: 250px;
+
+		.container {
+			min-height: 150vh;
+		}
 		&__left-box {
+			width: 1005;
 			padding: 0;
 			padding: 0 20px;
 			&__cards-performance {
@@ -233,8 +240,9 @@
 				max-width: none;
 				flex-wrap: nowrap;
 				margin-top: 50px;
+				margin-bottom: -50px;
 				.card {
-					height: max-content;
+					height: 320px;
 					padding: 15px;
 					width: 100%;
 					min-width: 280px;
@@ -251,9 +259,9 @@
 					}
 
 					&__number {
-						font-size: 7rem;
+						font-size: 5rem;
 						span {
-							font-size: 5rem;
+							font-size: 3rem;
 						}
 					}
 
@@ -264,16 +272,21 @@
 			}
 		}
 		&__right-box {
-			justify-content: flex-start;
+			max-width: 100vw;
+			height: 100%;
+			justify-content: center;
 			align-items: flex-start;
+			margin-right: 0;
+			padding: 20px;
 
 			&__cards-performance {
-				margin-bottom: -250px;
+				margin-top: 300px;
+				margin-bottom: -300px;
 				display: flex;
 				flex-direction: column;
-				width: 100vw;
 
 				.card {
+					width: 280px;
 					&:nth-child(2) {
 						margin-bottom: 0;
 					}
@@ -342,7 +355,7 @@
 			}
 
 			&__info {
-				max-width: 330px;
+				max-width: none;
 				padding: 0 20px;
 				p {
 					color: $primary-text-color;
@@ -396,6 +409,12 @@
 			width: 100vw;
 			&__info {
 				padding: 0 20px;
+				.paragraphs {
+					gap: 0;
+					p {
+						max-width: none;
+					}
+				}
 			}
 			&__img-info {
 				display: flex;
@@ -434,6 +453,11 @@
 				padding: 0 20px;
 			}
 
+			&__info {
+				max-width: none;
+				margin-bottom: 50px;
+			}
+
 			&__title {
 				padding-top: 50px;
 			}
@@ -454,7 +478,83 @@
 
 			&__info {
 				padding: 0 20px;
+				.paragraphs {
+					gap: 0;
+					margin-bottom: 50px;
+					p {
+						max-width: none;
+					}
+				}
 			}
+		}
+	}
+
+	.section11 {
+		width: 100vw;
+		&__left-box {
+			background-color: transparent;
+			width: 100%;
+			padding: 0 20px;
+
+			&__info {
+				margin-bottom: 50px;
+				max-width: none;
+			}
+			&__img {
+				position: relative;
+			}
+		}
+
+		&__right-box {
+			background-color: $primary-color;
+			width: 100%;
+			padding: 0 20px;
+
+			&__info {
+				margin-bottom: 50px;
+				.title {
+					margin-bottom: 50px;
+					h2 {
+						font-size: 2rem;
+					}
+				}
+				.paragraphs {
+					gap: 30px;
+					&__box-p {
+						max-width: none;
+					}
+				}
+			}
+		}
+	}
+
+	.section12 {
+		&__left-box {
+			padding: 0 20px;
+			padding-bottom: 30px;
+			.title {
+				h2 {
+					font-size: 2rem;
+				}
+			}
+			.brand {
+				width: 100%;
+				justify-content: space-between;
+				margin-top: 30px;
+				max-width: none;
+
+				.box-brand {
+					max-width: 150px;
+				}
+
+				.box-icon {
+					max-width: 50px;
+				}
+			}
+		}
+
+		&__right-box {
+			min-height: 500px;
 		}
 	}
 }

@@ -68,15 +68,16 @@
 			margin-top: 50px;
 			.title {
 				margin-bottom: 100px;
-				color: $secondary-text-color;
 				h2 {
 					font-weight: normal;
 					font-size: 3rem;
+					color: $secondary-text-color;
 				}
 				p {
 					max-width: 600px;
 					margin: 0;
 					font-size: 1.5rem;
+					color: $primary-text-color;
 				}
 			}
 			.paragraphs {

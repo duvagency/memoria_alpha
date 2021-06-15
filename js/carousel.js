@@ -7,17 +7,17 @@ const $sliderContainer = document.getElementById("carrusel"),
 
 let pageTranslate = 0;
 let countClick = 0;
-let $nextBtn = $boxBtns.lastElementChild;
+let $nextBtn = $boxBtns.firstElementChild;
 
 const handleButton = ($btn) => {
-	/* animations(); */
+	animations();
 	if (countClick === 0) {
 		$boxBtns.style.display = "none";
 		return;
 	} else {
 		$boxBtns.style.display = "initial";
 		if ($btn.matches("#next") && countClick === $sections.length) {
-			$btn.classList.add("isActive");
+			$nextBtn.classList.add("isActive");
 		} else {
 			$nextBtn.classList.remove("isActive");
 		}
