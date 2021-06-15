@@ -1,4 +1,5 @@
-import spyElements from "./spyElements.js";
+/* import spyElements from "./spyElements.js"; */
+import animations from "./animations.js";
 
 const $sliderContainer = document.getElementById("carrusel"),
 	$boxBtns = document.getElementById("box-btns"),
@@ -9,7 +10,7 @@ let countClick = 0;
 let $nextBtn = $boxBtns.lastElementChild;
 
 const handleButton = ($btn) => {
-	spyElements();
+	/* animations(); */
 	if (countClick === 0) {
 		$boxBtns.style.display = "none";
 		return;
