@@ -8,7 +8,6 @@ const $sliderContainer = document.getElementById("carrusel"),
 
 let pageTranslate = 0;
 let countClick = 0;
-let $nextBtn = $boxBtns.firstElementChild;
 
 const handleButton = ($btn) => {
 	animations();
@@ -20,9 +19,11 @@ const handleButton = ($btn) => {
 		$boxBtns.style.display = "initial";
 		$downloadBtn.classList.add("isActive");
 		if ($btn.matches("#next") && countClick === $sections.length) {
-			$nextBtn.classList.add("isActive");
+			$boxBtns.style.display = "none";
+			$downloadBtn.classList.add("isHidden");
 		} else {
-			$nextBtn.classList.remove("isActive");
+			$boxBtns.style.display = "initial";
+			$downloadBtn.classList.remove("isHidden");
 		}
 	}
 };

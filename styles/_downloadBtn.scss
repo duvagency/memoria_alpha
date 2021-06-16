@@ -32,15 +32,28 @@
 		background-color: $primary-color;
 		transition: all 0.3s ease;
 		.fas {
-			color: $secondary-text-color;
+			g {
+				path {
+					stroke: $secondary-text-color;
+				}
+			}
 		}
 
 		&:hover {
 			color: $thrird-text-color;
 			background-color: $thrird-color;
 			.fas {
-				color: $thrird-text-color;
+				g {
+					path {
+						stroke: $thrird-text-color;
+					}
+				}
 			}
+		}
+
+		&.isHidden {
+			visibility: hidden;
+			opacity: 0;
 		}
 	}
 }

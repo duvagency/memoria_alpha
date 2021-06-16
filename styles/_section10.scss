@@ -90,6 +90,20 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		.title {
+			font-size: 1.7rem;
+			color: $secondary-text-color;
+			max-width: 250px;
+			p {
+				margin: 0;
+			}
+		}
+
+		.t-1 {
+			margin-bottom: 30px;
+			padding: 0 20px;
+			display: none;
+		}
 		&__video {
 			max-width: 550px;
 			max-height: 300px;
@@ -106,14 +120,6 @@
 		}
 		&__info {
 			margin-top: 50px;
-			.title {
-				font-size: 1.7rem;
-				color: $secondary-text-color;
-				max-width: 250px;
-				p {
-					margin: 0;
-				}
-			}
 			.paragraphs {
 				color: $primary-text-color;
 				display: flex;
