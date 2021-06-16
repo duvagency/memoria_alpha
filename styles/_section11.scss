@@ -11,7 +11,6 @@
 	}
 
 	&__left-box {
-		background-color: $primary-color;
 		position: relative;
 		padding: 50px;
 		z-index: 1;
@@ -20,7 +19,7 @@
 			max-width: 300px;
 			h2 {
 				color: $secondary-text-color;
-				font-size: 1.5rem;
+				font-size: 2.5rem;
 			}
 		}
 
@@ -60,24 +59,44 @@
 	}
 
 	&__right-box {
-		padding-left: 100px;
-		position: relative;
+		background-color: $primary-color;
 		display: flex;
-		flex-direction: column;
+		gap: 30px;
+		&__img {
+			.box-img {
+				max-width: 200px;
+				min-width: 150px;
+				margin-top: 200px;
+				img {
+					width: 100%;
+				}
+			}
+		}
 		&__info {
 			margin-top: 50px;
 			.title {
 				margin-bottom: 100px;
 				h2 {
 					font-weight: normal;
-					font-size: 3rem;
+					font-size: 2.5rem;
 					color: $secondary-text-color;
 				}
-				p {
-					max-width: 600px;
-					margin: 0;
-					font-size: 1.5rem;
-					color: $primary-text-color;
+				.paragraph {
+					display: flex;
+					gap: 30px;
+					.box-img {
+						display: none;
+						width: 400px;
+						img {
+							width: 100%;
+						}
+					}
+					p {
+						max-width: 600px;
+						margin: 0;
+						font-size: 1.5rem;
+						color: $primary-text-color;
+					}
 				}
 			}
 			.paragraphs {

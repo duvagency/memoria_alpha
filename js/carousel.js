@@ -3,7 +3,8 @@ import animations from "./animations.js";
 
 const $sliderContainer = document.getElementById("carrusel"),
 	$boxBtns = document.getElementById("box-btns"),
-	$sections = document.querySelectorAll(".section");
+	$sections = document.querySelectorAll(".section"),
+	$downloadBtn = document.getElementById("download-btn");
 
 let pageTranslate = 0;
 let countClick = 0;
@@ -13,9 +14,11 @@ const handleButton = ($btn) => {
 	animations();
 	if (countClick === 0) {
 		$boxBtns.style.display = "none";
+		$downloadBtn.classList.remove("isActive");
 		return;
 	} else {
 		$boxBtns.style.display = "initial";
+		$downloadBtn.classList.add("isActive");
 		if ($btn.matches("#next") && countClick === $sections.length) {
 			$nextBtn.classList.add("isActive");
 		} else {
