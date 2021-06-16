@@ -8,10 +8,9 @@
 	}
 }
 
-@mixin addBg-img($url) {
+@mixin addBg-img {
 	background: {
-		image: $url;
-		position: center;
+		position: top;
 		size: cover;
 		repeat: no-repeat;
 	}

@@ -74,7 +74,8 @@
 	}
 
 	&__right-box {
-		@include addBg-img(var(--bg-img));
+		background-image: var(--bg-img);
+		@include addBg-img;
 		margin-right: 100px;
 		position: relative;
 		padding: 30px;
