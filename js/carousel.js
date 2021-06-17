@@ -10,7 +10,7 @@ let pageTranslate = 0;
 let countClick = 0;
 
 const handleButton = ($btn) => {
-	animations();
+	/* animations(); */
 	if (countClick === 0) {
 		$boxBtns.style.display = "none";
 		$downloadBtn.classList.remove("isActive");
